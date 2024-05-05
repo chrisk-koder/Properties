@@ -14,7 +14,8 @@ function createCharacter() {
     const badTrait = document.querySelector("#charBadTraits").value.trim();
 
     if (!name || occupation === "none" || goodTrait === "none" || badTrait === "none") {
-        notification("incorrectInput");
+        //notification("incorrectInput");
+        console.log("Incorrect character input, make sure to specify a name, occupation, good and bad trait.")
     } else {
         const newCharacter = new character(name, occupation, goodTrait, badTrait);
         console.log(newCharacter);
@@ -26,6 +27,7 @@ function addCharacter() {
 }
 
 // Notification functions, definitely not needed but a fun little addition
+// Not done yet so code is commented out to avoid issues
 /*function notification(type) {
 
     const categories = {
