@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Properties</title>
+    <script src="test.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <section class="container" id="charCreator">
+            <div class="wrapper">
+                <label for="charName">Character Name:</label>
+                <input type="text" id="charName" placeholder="Character Name">
+
+                <label for="charOccupation">Occupation:</label>
+                <select name="charOccupation" id="charOccupation">
+                    <option value="none">None</option>
+                    <option value="chef">Chef</option>
+                    <option value="repairman">Repairman</option>
+                    <option value="farmer">Farmer</option>
+                    <option value="fisherman">Fisherman</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="lumberjack">Lumberjack</option>
+                </select>
+
+                <label for="charGoodTraits">Positive Traits:</label>
+                <select name="charGoodTraits" id="charGoodTraits">
+                    <option value="none">None</option>
+                    <option value="angler">Angler</option>
+                    <option value="brave">Brave</option>
+                    <option value="fast_learner">Fast Learner</option>
+                    <option value="fast_healer">Fast Healer</option>
+                </select>
+
+                <label for="charBadTraits">Negative Traits:</label>
+                <select name="charBadTraits" id="charBadTraits">
+                    <option value="none">None</option>
+                    <option value="disorganized">Disorganized</option>
+                    <option value="claustrophobic">Claustrophobic</option>
+                    <option value="asthmatic">Asthmatic</option>
+                    <option value="clumsy">Clumsy</option>
+                </select>
+                <button onclick="createCharacter()">Create Character</button>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="notification" class="success">
+        <p>Your character has been created</p>
+    </div>
+    
+</body>
+</html>

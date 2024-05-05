@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(32, 32, 32);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 0.3rem;
+}
+
+
+/* Character Creator */
+
+#charCreator select, #charCreator input {
+    width: 20rem;
+    border: none;
+    color: white;
+    background: rgba(65, 65, 65, 0.315);
+    padding: 0.5rem;
+}
+
+#charCreator select {
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    background-color: #2a2a2a;
+    padding: 5px 10px;
+
+}
+
+
+#charCreator label {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#charCreator button {
+    width: 100%;
+    border: none;
+    background: rgba(65, 65, 65, 0.315);
+    color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-bottom: 0.2rem solid rgb(92, 214, 61);
+    transition: transform .2s;
+}
+
+#charCreator button:hover {
+    transform: translateY(-0.2rem);
+    cursor: pointer;
+}
+
+/* Character List */
+#charList {
+
+}
+
+
+/* Notifications */
+#notification {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 20rem;
+
+    color: white;
+    background: rgb(65, 65, 65);
+    padding: 1rem;
+    border-radius: 1rem 0 0 1rem;
+    border-right: 0.2rem solid rgb(105, 105, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s ease-out;
+}
+
+#notification.error {
+    border-right: 0.2rem solid red;
+}
+#notification.success {
+    border-right: 0.2rem solid rgb(82, 224, 82);
+}
